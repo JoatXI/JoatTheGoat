@@ -1,3 +1,19 @@
+# Personal Portfolio
+Welcome to my personal portfolio project on GitHub! This portfolio showcases my programming journey, skills, and various projects that I've worked on.
+
+# About Me (Joat)
+A software engineering student with 4 years of programming experience. I started my journey by self-learning the Python programming language, and I'm currently expanding my knowledge and skills at university.
+
+Technologies Used:
+
+JavaScript: Used for frontend development and interactivity.
+React: Utilized the React framework for building dynamic and responsive user interfaces.
+React-Bootstrap: Leveraged the React-Bootstrap library for styling and layout components.
+
+Portfolio Projects:
+
+Various projects will included in this portfolio as soon as they are completed as well as a link to the live portfolio after completion.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
