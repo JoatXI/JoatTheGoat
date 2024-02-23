@@ -75,7 +75,7 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={skillImg8} alt="Image" />
-                                    <h5>SQLite</h5>
+                                    <h5>MySQL</h5>
                                 </div>
                                 <div className="item">
                                     <img src={skillImg2} alt="Image" />
