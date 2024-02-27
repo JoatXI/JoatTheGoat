@@ -39,9 +39,6 @@ export const Projects = () => {
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore deserunt corrupti ab quam eaque deleniti quaerat officia.</p>
                                 <Tab.Container id="projects-tab" defaultActiveKey="one">
                                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                        <Nav.Item>
-                                            <Nav.Link eventKey="one">PROJECT VIEW</Nav.Link>
-                                        </Nav.Item>
                                     </Nav>
                                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                         <Tab.Pane eventKey="one">

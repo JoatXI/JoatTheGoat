@@ -1,5 +1,5 @@
 import { Container, Row, Col} from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { Download } from "react-bootstrap-icons";
 import headerImg from "../assets/img/headshot.png";
 
 export const Banner = () => {
@@ -12,7 +12,9 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hello! I'm Omoohwo`}</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aliquam, repellat aspernatur veniam, obcaecati voluptate libero, consequuntur praesentium excepturi sed quisquam neque minus deserunt nisi iusto recusandae exercitationem eum laudantium.</p>
-                        <button onClick={() => console.log("connect")}>Contact Me <ArrowRightCircle size={25} /></button>
+                        <a href="../assets/img/headshot.png" download="SE_Resume">
+                            <button className="resume-button">Resume<Download size={25} /></button>
+                        </a>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Banner Img" />

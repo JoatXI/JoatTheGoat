@@ -117,7 +117,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:active {
     opacity: 1;
 }
 
-span.navigator-text {
+span.navbar-text {
     display: flex;
     align-items: center;
 }
@@ -295,24 +295,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 96%;
 }
 
-.banner button {
-    color: #fff;
+.resume-button {
+    color: #064E3B;
     font-weight: 700;
     font-size: 20px;
     margin-top: 60px;
     letter-spacing: 0.8px;
-    display: flex;
+    display: inline-block;
     align-items: center;
+    border: 3px solid #f1f1f1;
+    border-radius: 30px;
+    padding: 7px 12px;
+    cursor: pointer;
+    background-color: #6EE7B7;
 }
 
-.banner button svg {
+.resume-button svg {
     font-size: 25px;
     margin-left: 10px;
     transition: 0.3s ease-in-out;
     line-height: 1;
 }
 
-.banner button:hover svg {
+.resume-button:hover {
+    background-color: #064E3B;
+    color: #fff;
+}
+
+.resume-button:hover svg {
     margin-left: 25px;
 }
 
@@ -378,13 +388,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background-color: #080808;
 }
 
-  .project h2 {
+.project h2 {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
 }
 
-  .project p {
+.project p {
     color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
@@ -400,7 +410,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-radius: 50px;
     background-color: rgb(255 255 255 / 10%);
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 .project .nav.nav-pills .nav-item {
@@ -436,11 +445,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
-}
-
-.nav-link#projects-tabs-tab-one {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 55px 0px 0px 55px;
 }
 
 .project-imgbox {
@@ -493,6 +497,88 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 15px;
     letter-spacing: 0.8px;
 }  
+
+.contact {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    padding: 60px 0 200px 0;
+}
+
+.contact img {
+    width: 92%;
+}
+
+.contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+}
+
+.contact form button {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form button span {
+    z-index: 1;
+    position: relative;
+}
+
+.contact form button:hover {
+    color: #fff;
+}
+
+.contact form button::before {
+    content: "";
+    background: #121212;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.contact form button:hover::before {
+    width: 100%;
+}
 
 .App {
     text-align: center;
