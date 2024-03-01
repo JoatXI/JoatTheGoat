@@ -33,7 +33,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    background-color: #080808 !important;
+    background-color: #151516 !important;
     color: #fff !important;
     font-family: "Kode Mono", monospace !important;
 }
@@ -87,7 +87,7 @@ p.danger {
 /* NavBar CSS */
 
 nav.navbar {
-    padding: 18px 0;
+    padding: 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -96,8 +96,8 @@ nav.navbar {
 }
 
 nav.navbar.scrolling {
-    padding: 0px 0;
-    background-color: #000000;
+    padding: 0;
+    background-color: #111111;
 }
 
 nav.navbar a.navbar-brand {
@@ -165,6 +165,39 @@ span.navbar-text {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }	
 
+.resume-button {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.resume-button a {
+    font-weight: 700;
+    display: inline-flex;
+    border-radius: 30px;
+    margin-right: 6px;
+    align-items: center;
+    padding: 8px 12px;
+    justify-content: center;
+    line-height: 1;
+    border: 3px solid rgba(78, 77, 77, 0.5);
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.resume-button a:hover {
+    background-color: #f3eeee;
+}
+
+.resume-button svg {
+    margin-left: 8px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.resume-button:hover svg {
+    margin-left: 25px;
+}
+
 .navbar-text button {
     font-weight: 700;
     color: #fff;
@@ -174,7 +207,7 @@ span.navbar-text {
     position: relative;
     background-color: transparent;
     margin-left: 18px;
-    padding: 18px 34px;
+    padding: 18px 24px;
 }
 
 .navbar-text button span {
@@ -258,13 +291,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Banner CSS */
+
 .banner {
-    margin-top: 0;
-    padding: 260px 0 100px 0;
-    background-image: url('./assets/img/blackground.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+    padding: 260px 0 160px 0;
+}
+
+.banner-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner .tagline {
@@ -295,37 +330,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 96%;
 }
 
-.resume-button {
-    color: #064E3B;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
-    letter-spacing: 0.8px;
-    display: inline-block;
-    align-items: center;
-    border: 3px solid #f1f1f1;
-    border-radius: 30px;
-    padding: 7px 12px;
-    cursor: pointer;
-    background-color: #6EE7B7;
-}
-
-.resume-button svg {
-    font-size: 25px;
-    margin-left: 10px;
-    transition: 0.3s ease-in-out;
-    line-height: 1;
-}
-
-.resume-button:hover {
-    background-color: #064E3B;
-    color: #fff;
-}
-
-.resume-button:hover svg {
-    margin-left: 25px;
-}
-
 .banner img {
     animation: updown 5s linear infinite;
 }
@@ -344,7 +348,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Skills CSS */
 .skills {
-    padding: 0 0 50px 0;
+    padding: 160px 0 160px 0;
     position: relative;
 }
 
@@ -353,8 +357,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
-    margin-top: -60px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0;
 }
 
 .skills h2 {
@@ -382,10 +385,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Projects CSS */
+
 .project {
-    padding: 80px 0;
+    padding: 160px 0 160px 0;
     position: relative;
-    background-color: #080808;
 }
 
 .project h2 {
@@ -498,13 +501,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     letter-spacing: 0.8px;
 }  
 
+/* Contact CSS */
+
 .contact {
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
     padding: 60px 0 200px 0;
 }
 
 .contact img {
-    width: 92%;
+    width: 100%;
+    background-color: transparent !important;
 }
 
 .contact h2 {

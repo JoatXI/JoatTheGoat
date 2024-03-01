@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Download } from "react-bootstrap-icons";
 import logo from "../assets/img/logo.png";
 import linkedinIcon from "../assets/img/linkedin.png";
 import githubIcon from "../assets/img/git.png";
@@ -51,6 +52,9 @@ export const NavBar = () => {
                             <HashLink to="#connect">
                                 <button className="vvd"><span>Contact Me</span></button>
                             </HashLink>
+                            <div className="resume-button">
+                                <a href="../assets/img/headshot.png" download="SE_Resume">Resume<Download size={25} /></a>
+                            </div>
                         </span>
                     </Navbar.Collapse>
                 </Container>

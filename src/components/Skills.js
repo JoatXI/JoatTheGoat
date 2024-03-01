@@ -9,6 +9,7 @@ import skillImg5 from "../assets/img/python.png";
 import skillImg6 from "../assets/img/JS.png";
 import skillImg7 from "../assets/img/react.png";
 import skillImg8 from "../assets/img/database.png";
+import skillPhoto from "../assets/img/tech-stack.gif";
 
 export const Skills = () => {
     const responsive = {
@@ -46,11 +47,12 @@ export const Skills = () => {
         <section className="skills" id="skills">
             <Container>
                 <Row>
-                    <Col>
+                    <Col xs={12} md={6} xl={5}>
+                        <img src={skillPhoto} alt="Tech Stack"/>
+                    </Col>
+                    <Col xs={12} md={6} xl={7}>
                         <div className="skill-box">
-                            <h2>
-                                Skills
-                            </h2>
+                            <h2>Skills</h2>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aliquam, repellat aspernatur veniam, obcaecati voluptate libero. Consequuntur praesentium excepturi sed quisquam neque minus deserunt nisi iusto recusandae exercitationem eum laudantium.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
