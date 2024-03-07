@@ -8,19 +8,16 @@ import { Contact } from './components/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  useEffect(() => {
-    fetch("/")
-    .then((res) => res.json())
-    .then((data) => { console.log(data)})
-  }, [])
 
   return (
     <div className="App">
         <NavBar />
-        <Banner />
-        <Skills />
-        <Projects />
-        <Contact />
+        <div className='content'>
+          <Banner />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
     </div>
   );
 }
