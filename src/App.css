@@ -17,7 +17,7 @@
     font-weight: 400;
 }
 
-/* Default CSS */
+/* Custom Scroll Bar */
 
 ::-webkit-scrollbar {
     width: .5em;
@@ -38,35 +38,51 @@
     background: hsl(0, 0%, 92%);
 }
 
-* {
-    margin: 0;
-    padding: 0;
+/* Default CSS */
+
+:root {
+    --clr-primary-200: #F3EBEB;
+    --clr-primary-400: #F4E4E4;
+
+    --clr-neutral-500: #FFF;
+    --clr-neutral-700: #151516;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 html {
-    scroll-padding: 75px;
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: "Kode Mono", monospace !important;
     font-weight: 400;
+    font-size: 1.125rem;
     overflow-x: hidden;
     position: relative;
     background-color: #151516 !important;
     color: #fff !important;
-    font-family: "Kode Mono", monospace !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+    font-weight: 700;
     line-height: normal;
+}
+
+section {
+    padding: 2rem 0;
 }
 
 p, a, li, button, ul {
     margin: 0;
     padding: 0;
+    font-size: 1.125rem;
     line-height: normal;
     text-decoration: none;
 }
@@ -76,7 +92,7 @@ a:hover {
 }
   
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
   
@@ -88,19 +104,10 @@ button {
 input:focus, textarea:focus, select:focus {
     outline: none;
 }
-  
-p.success {
-    color: green;
-}
-  
-p.danger {
-    color: red;
-}
-
 /* NavBar CSS */
 
 nav.navbar {
-    padding: 5px 60px;
+    padding: 0.3rem 4rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -109,24 +116,23 @@ nav.navbar {
 }
 
 .content {
-    padding-top: 65px;
+    padding-top: 4rem;
 }
 
 nav.navbar.scrolling {
-    padding: 5px 60px;
+    padding: 0.3rem 4rem;
     background-color: #111111;
 }
 
 nav.navbar a.navbar-brand {
     width: auto;
-    max-width: 9%;
+    max-width: 12%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #fff !important;
-    letter-spacing: 0.8px;
-    padding: 0 25px;
+    padding: 0 1.6rem;
     opacity: 0.75;
 }
 
@@ -138,7 +144,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:active {
 span.navbar-text {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .social-icon {
@@ -146,16 +152,16 @@ span.navbar-text {
 }
 
 .social-icon a {
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
-    margin-right: 13px;
+    margin-right: 0.813rem;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 0.063rem solid rgba(255, 255, 255, 0.5);
 }
 
 .social-icon a:last-child {
@@ -164,8 +170,8 @@ span.navbar-text {
 
 .social-icon a::before {
     content: "";
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
     position: absolute;
     background-color: #F4E4E4;
     border-radius: 50%;
@@ -194,13 +200,13 @@ span.navbar-text {
 .resume-button a {
     font-weight: 700;
     display: inline-flex;
-    border-radius: 30px;
-    margin-right: 6px;
+    border-radius: 1.875rem;
+    margin-right: 0.375rem;
     align-items: center;
-    padding: 7px 10px;
+    padding: 0.438rem 0.625rem;
     justify-content: center;
     line-height: 1;
-    border: 3px solid rgba(78, 77, 77, 0.5);
+    border: 0.188rem solid rgba(78, 77, 77, 0.5);
     background-color: #fff;
     text-decoration: none;
 }
@@ -210,24 +216,23 @@ span.navbar-text {
 }
 
 .resume-button svg {
-    margin-left: 8px;
+    margin-left: 0.5rem;
     transition: 0.3s ease-in-out;
     line-height: 1;
 }
 
 .resume-button:hover svg {
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .navbar-text button {
     font-weight: 700;
     color: #fff;
-    font-size: 18px;
     transition: 0.3s ease-in-out;
-    border: 1px solid #fff;
+    border: 0.063rem solid #fff;
     position: relative;
     background-color: transparent;
-    padding: 10px 15px;
+    padding: 0.625rem 0.938rem;
 }
 
 .navbar-text button span {
@@ -260,33 +265,32 @@ span.navbar-text {
 /* Banner CSS */
 
 .banner {
-    padding: 60px;
     margin: 0;
     display: flex;
+    border: 2px solid yellow;
 }
 
 .center-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    min-height: 100%;
 }
 
 .banner h1 {
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 700;
     line-height: 1em;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     display: block;
+    width: 90%;
 }
 
 .banner p {
     color: #B8B8B8;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    width: 96%;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    width: 80%;
 }
 
 .banner img {
@@ -313,11 +317,11 @@ span.navbar-text {
 
 /* Skills CSS */
 .skills {
-    padding: 60px;
+    border: 2px solid green;
 }
 
 .skills-container {
-    padding: 60px;
+    padding: 3.75rem;
 }
 
 .skill-banner {
@@ -327,37 +331,36 @@ span.navbar-text {
 }
 
 .skills-container h2 {
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 700;
     display: flex;
     justify-content: center;
 }
 
 .skills p {
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
     line-height: 1.5em;
     text-align: center;
-    margin: 20px 0 5px 0;
+    margin: 1.25rem 0 0.313rem 0;
 }
 
 .skills-tree {
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
   
 .skills-tree .row {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
   
 .skills-tree img {
     width: auto;
     max-width: 100%;
-    border: 2px solid rgb(194, 193, 193);
+    border: 0.125rem solid rgb(194, 193, 193);
     background-color: #F3EBEB;
-    border-radius: 50px;
-    padding: 15px;
+    border-radius: 3.125rem;
+    padding: 0.938rem;
 }
 
 .skills-tree img:hover {
@@ -368,22 +371,21 @@ span.navbar-text {
 /* Projects CSS */
 
 .project {
-    padding: 160px 0 160px 0;
     position: relative;
+    border: 2px solid red;
 }
 
 .project h2 {
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 700;
     text-align: center;
 }
 
 .project p {
     color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
     line-height: 1.5em;
-    margin: 14px auto 30px auto;
+    margin: 0.875rem auto 1.875rem auto;
     text-align: center;
     width: 56%;
 }
@@ -391,7 +393,7 @@ span.navbar-text {
 .project .nav.nav-pills {
     width: 12%;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     background-color: rgb(255 255 255 / 10%);
     overflow: hidden;
 }
@@ -403,11 +405,10 @@ span.navbar-text {
 .project .nav.nav-pills .nav-link {
     background-color: transparent;
     border-radius: 0;
-    padding: 17px 0;
+    padding: 1.063rem 0;
     color: #fff;
     width: 100%;
-    font-size: 17px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
     font-weight: 500;
     position: relative;
     transition: 0.3s ease-in-out;
@@ -433,9 +434,9 @@ span.navbar-text {
 
 .project-imgbox {
     position: relative;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .project-imgbox::before {
@@ -469,23 +470,22 @@ span.navbar-text {
 }
 
 .project-info h4 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
     line-height: 1.1em;
 }
  
 .project-info span {
     font-style: italic;
     font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
 }  
 
 /* Contact CSS */
 
 .contact {
-    padding: 60px 0 200px 0;
+    border: 2px solid blue;
 }
 
 .contact img {
@@ -494,22 +494,22 @@ span.navbar-text {
 }
 
 .contact h2 {
-    font-size: 45px;
+    font-size: 2.813rem;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .contact form input, .contact form textarea {
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    border: 0.063rem solid rgba(255, 255, 255, 0.5);
+    border-radius: 1.25rem;
     color: #fff;
-    margin: 0 0 8px 0;
-    padding: 18px 26px;
+    margin: 0 0 0.5rem 0;
+    padding: 1.125rem 1.625rem;
     font-weight: 500;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+    font-size: 1.125rem;
+    letter-spacing: 0.05rem;
     transition: 0.3s ease-in-out;
 }
 
@@ -519,7 +519,6 @@ span.navbar-text {
 }
 
 .contact form input::placeholder, .contact form textarea::placeholder {
-    font-size: 16px;
     font-weight: 400;
     color: #fff;
 }
@@ -533,9 +532,9 @@ span.navbar-text {
     font-weight: 700;
     color: #000;
     background-color: #fff;
-    padding: 14px 48px;
-    font-size: 18px;
-    margin-top: 25px;
+    padding: 0.875rem 3rem;
+    font-size: 1.125rem;
+    margin-top: 1.563rem;
     border-radius: 0;
     position: relative;
     transition: 0.3s ease-in-out;
@@ -569,21 +568,21 @@ span.navbar-text {
 @media (max-width: 992px) {
 
     nav.navbar {
-        padding: 0 30px;
+        padding: 0 1.875rem;
     }
 
     nav.navbar.scrolling {
-        padding: 0 30px;
+        padding: 0 1.875rem;
         background-color: #111111;
     }
 
     nav.navbar a.navbar-brand {
         width: auto; /* Adjust maximum width for logo */
-        max-width: 18%;
+        max-width: 20%;
     }
 
     nav.navbar .navbar-nav .nav-link.navbar-link {
-        font-size: 16px; /* Adjust font size */
+        font-size: 1rem; /* Adjust font size */
         display: none;
     }
 }
@@ -591,16 +590,17 @@ span.navbar-text {
 @media (max-width: 767.98px) {
 
     nav.navbar {
-        padding: 0 20px;
+        padding: 0 1.25rem;
     }
 
     nav.navbar.scrolling {
-        padding: 0 20px;
+        padding: 0 1.25rem;
         background-color: #111111;
     }
 
     nav.navbar a.navbar-brand {
         width: auto; /* Adjust maximum width for logo */
+        max-width: 20%;
     }
 
     nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -608,27 +608,27 @@ span.navbar-text {
     }
 
     .social-icon a {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         background: rgba(217, 217, 217, 0.1);
         display: inline-flex;
         border-radius: 50%;
-        margin-right: 6px;
+        margin-right: 0.375rem;
         align-items: center;
         justify-content: center;
         line-height: 1;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        border: 0.063rem solid rgba(255, 255, 255, 0.5);
     }
     
     .navbar-text button {
         font-weight: 500;
         color: #fff;
-        font-size: 16px;
+        font-size: 1rem;
         transition: 0.3s ease-in-out;
-        border: 1px solid #fff;
+        border: 0.063rem solid #fff;
         position: relative;
         background-color: transparent;
-        padding: 8px 8px;
+        padding: 0.5rem 0.5rem;
     }
 
     .resume-button a {
@@ -637,10 +637,10 @@ span.navbar-text {
         border-radius: 30px;
         margin-right: 6px;
         align-items: center;
-        padding: 6px 6px;
+        padding: 0.375rem 0.375rem;
         justify-content: center;
         line-height: 1;
-        border: 2px solid rgba(78, 77, 77, 0.5);
+        border: 0.125rem solid rgba(78, 77, 77, 0.5);
         background-color: #fff;
         text-decoration: none;
     }
@@ -649,11 +649,11 @@ span.navbar-text {
 @media (max-width: 469.98px) {
     
     nav.navbar {
-        padding: 0 10px;
+        padding: 0 0.625rem;
     }
 
     nav.navbar.scrolling {
-        padding: 0 10px;
+        padding: 0 0.625rem;
         background-color: #111111;
     }
 
@@ -673,11 +673,11 @@ span.navbar-text {
     .navbar-text button {
         font-weight: 500;
         color: #fff;
-        font-size: 16px;
+        font-size: 1rem;
         transition: 0.3s ease-in-out;
-        border: 1px solid #fff;
+        border: 0.063rem solid #fff;
         position: relative;
         background-color: transparent;
-        padding: 6px 6px;
+        padding: 0.375rem 0.375rem;
     }
 }
