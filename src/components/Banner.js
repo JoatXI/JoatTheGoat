@@ -11,7 +11,7 @@ export const Banner = () => {
                         <Col xs={12} md={6} xl={7} className="banner-text">
                             <div className="center-content">
                                 <h1>I'm Omoohwo, a Software Engineer & Developer.</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aliquam, repellat aspernatur veniam, obcaecati voluptate libero, consequuntur.</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                                 <h2>Here's a story for you</h2>
                             </div>
                         </Col>

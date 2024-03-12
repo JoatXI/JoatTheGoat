@@ -62,23 +62,23 @@ html {
 body {
     margin: 0;
     font-family: "Kode Mono", monospace !important;
-    font-weight: 400;
+    font-weight: 400 !important;
     font-size: 1rem;
     background-color: var(--clr-neutral-900) !important;
-    color: #fff !important;
+    color: var(--clr-primary-100) !important;
 }
 
 h1 {
     margin: 0;
     padding: 0;
-    font-weight: 700;
+    font-weight: 700 !important;
     line-height: normal;
 }
 
 h2 {
     padding: 0;
     margin: 0;
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 p, a, li, button, ul {
@@ -87,6 +87,7 @@ p, a, li, button, ul {
     font-size: 1.125rem;
     line-height: normal;
     text-decoration: none;
+    font-weight: 400 !important;
 }
 
 a:hover {
@@ -147,7 +148,7 @@ nav.navbar a.navbar-brand {
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-size: 1.1rem;
-    color: #fff !important;
+    color: var(--clr-primary-100) !important;
     padding: 0 1.6rem;
     opacity: 0.75;
 }
@@ -189,7 +190,7 @@ span.navbar-text {
     width: 2.625rem;
     height: 2.625rem;
     position: absolute;
-    background-color: #F4E4E4;
+    background-color: var(--clr-neutral-400);
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -223,12 +224,12 @@ span.navbar-text {
     justify-content: center;
     line-height: 1;
     border: 0.188rem solid rgba(78, 77, 77, 0.5);
-    background-color: #fff;
+    background-color: var(--clr-primary-100);
     text-decoration: none;
 }
 
 .resume-button a:hover {
-    background-color: #f3eeee;
+    background-color: var(--clr-primary-200);
 }
 
 .resume-button svg {
@@ -243,9 +244,9 @@ span.navbar-text {
 
 .navbar-text button {
     font-weight: 700;
-    color: #fff;
+    color: var(--clr-primary-100);
     transition: 0.3s ease-in-out;
-    border: 0.063rem solid #fff;
+    border: 0.063rem solid var(--clr-primary-100);
     position: relative;
     background-color: transparent;
     padding: 0.625rem 0.938rem;
@@ -268,7 +269,7 @@ span.navbar-text {
 }
 
 .navbar-text button:hover {
-    color: #3c4147;
+    color: var(--clr-neutral-900);
 }
 
 .navbar-text button:hover::before {
@@ -348,6 +349,7 @@ span.navbar-text {
 
 .skills-box h2 {
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .skill-banner {
@@ -391,15 +393,21 @@ span.navbar-text {
 
 .project-header {
     text-align: center;
-    max-width: 80%;
+    max-width: 95%;
     margin-inline: auto;
     padding-block: 2.5rem;
+}
+
+.project-header h2 {
+    padding-bottom: 2rem;
 }
 
 .project-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-inline: auto;
+    max-width: 95%;
 }
 
 .card {
@@ -407,7 +415,7 @@ span.navbar-text {
     background-image: url(./assets/img/app-project.jpg);
     background-size: cover;
     padding: 10rem 0 0;
-    max-width: 35ch;
+    width: 35ch;
     border-radius: 0.5rem !important;
     overflow: hidden;
     transition: transform 300ms ease-in-out;
@@ -428,13 +436,13 @@ span.navbar-text {
 
 .card:hover,
 .card:focus-within {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    border: 2px solid var(--clr-neutral-600) !important;
 }
 
 .card p {
     padding: 0;
     font-size: 1rem;
-    line-height: 1.5em;
 }
 
 .card-content {
@@ -442,7 +450,7 @@ span.navbar-text {
     padding: var(--padding);
     background: linear-gradient(
         hsl(0 0% 0% / 0),
-        hsl(0 0% 0% / 0.4) 20%,
+        hsl(0 0% 0% / 1) 18%,
         hsl(0 0% 0% / 1)
     );
 }
@@ -475,8 +483,7 @@ span.navbar-text {
 }
 
 @media (hover) {
-    .card-content {    
-        transform: translateY(65%);
+    .card-content {
         transition: transform 300ms ease-in-out;
     }
     .card:hover .card-content,
@@ -490,7 +497,6 @@ span.navbar-text {
     }
     
     .card-content > *:not(.card-title) {
-        opacity: 0;
         transition: opacity 300ms linear;
     }
     
@@ -515,9 +521,28 @@ span.navbar-text {
     border-radius: 0.25em;
 }
 
+.card-butn svg {
+    padding: 0;
+    margin-bottom: 0.2rem;
+}
+
 .card-butn:hover,
 .card-butn:focus {
     background-color: var(--clr-neutral-400);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.7rem;
+    padding-block: 2.5rem;
+    margin-inline: auto;
+    max-width: 95%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -526,7 +551,6 @@ span.navbar-text {
     *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
         transition-delay: 0ms !important;
     }

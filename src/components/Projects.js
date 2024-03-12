@@ -7,7 +7,7 @@ export const Projects = () => {
         <section className="project" id="projects">
             <Container fluid>
                 <div className="project-header">
-                    <h2>Projects</h2>
+                    <h2>PROJECTS</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore deserunt corrupti ab quam eaque deleniti quaerat officia.</p>
                 </div>
                 <div class="project-cards">
@@ -39,6 +39,9 @@ export const Projects = () => {
                                 </div>
                             </div>
                         </Col>
+                        <div className="card-footer">
+                            <a href="https://github.com/JoatXI" target="_blank" rel="noopener noreferrer">*More Projects on GitHub</a>
+                        </div>
                     </Row>
                 </div>
             </Container>
