@@ -32,57 +32,57 @@ export const Skills = () => {
     
     return (
         <section className="skills" id="skills">
-            <Container fluid className="skills-container">
-                <Row>
+            <Container fluid>
+                <div class="skills-box">
                     <Row>
                         <h2>SKILLS</h2>
+                        <Col xs={12} md={6} xl={5} className="skill-banner">
+                            <img src={skillPhoto} alt="Tech Stack"/>
+                        </Col>
+                        <Col xs={12} md={6} xl={7}>
+                            <div className="skills-tree">
+                                <div className="row">
+                                    <p>Version Control:</p>
+                                    <img src={skillImg20} alt="Git" />
+                                    <img src={skillImg21} alt="GitHub" />
+                                </div>
+                                <div className="row">
+                                    <p>Databases, Servers & Web Hosting:</p>
+                                    <img src={skillImg8} alt="MySQL" />
+                                    <img src={skillImg9} alt="SQLite" />
+                                    <img src={skillImg14} alt="Apache" />
+                                    <img src={skillImg15} alt="Pages" />
+                                    <img src={skillImg16} alt="Render" />
+                                </div>
+                                <div className="row">
+                                    <p>Languages:</p>
+                                    <img src={skillImg6} alt="JavaScript" />
+                                    <img src={skillImg5} alt="Python" />
+                                    <img src={skillImg11} alt="Kotlin" />
+                                    <img src={skillImg3} alt="Java" />
+                                    <img src={skillImg2} alt="HTML" />
+                                    <img src={skillImg1} alt="CSS" />
+                                </div>
+                                <div className="row">
+                                    <p>Frameworks, Platforms & Libraries:</p>
+                                    <img src={skillImg4} alt="Node.js" />
+                                    <img src={skillImg22} alt="ExpressJs" />
+                                    <img src={skillImg13} alt="NPM" />
+                                    <img src={skillImg7} alt="React" />
+                                    <img src={skillImg10} alt="Babel" />
+                                    <img src={skillImg12} alt="Bootstrap" />
+                                    <img src={skillImg23} alt="Anaconda" />
+                                </div>
+                                <div className="row">
+                                    <p>Design Tools:</p>
+                                    <img src={skillImg17} alt="Photoshop" />
+                                    <img src={skillImg18} alt="Fonts" />
+                                    <img src={skillImg19} alt="Premiere" />
+                                </div>
+                            </div>
+                        </Col>
                     </Row>
-                    <Col xs={12} md={6} xl={5} className="skill-banner">
-                        <img src={skillPhoto} alt="Tech Stack"/>
-                    </Col>
-                    <Col xs={12} md={6} xl={7}>
-                        <div className="skills-tree">
-                            <div className="row">
-                                <p>Version Control:</p>
-                                <img src={skillImg20} alt="Git" />
-                                <img src={skillImg21} alt="GitHub" />
-                            </div>
-                            <div className="row">
-                                <p>Databases, Servers & Web Hosting:</p>
-                                <img src={skillImg8} alt="MySQL" />
-                                <img src={skillImg9} alt="SQLite" />
-                                <img src={skillImg14} alt="Apache" />
-                                <img src={skillImg15} alt="Pages" />
-                                <img src={skillImg16} alt="Render" />
-                            </div>
-                            <div className="row">
-                                <p>Languages:</p>
-                                <img src={skillImg6} alt="JavaScript" />
-                                <img src={skillImg5} alt="Python" />
-                                <img src={skillImg11} alt="Kotlin" />
-                                <img src={skillImg3} alt="Java" />
-                                <img src={skillImg2} alt="HTML" />
-                                <img src={skillImg1} alt="CSS" />
-                            </div>
-                            <div className="row">
-                                <p>Frameworks, Platforms & Libraries:</p>
-                                <img src={skillImg4} alt="Node.js" />
-                                <img src={skillImg22} alt="ExpressJs" />
-                                <img src={skillImg13} alt="NPM" />
-                                <img src={skillImg7} alt="React" />
-                                <img src={skillImg10} alt="Babel" />
-                                <img src={skillImg12} alt="Bootstrap" />
-                                <img src={skillImg23} alt="Anaconda" />
-                            </div>
-                            <div className="row">
-                                <p>Design Tools:</p>
-                                <img src={skillImg17} alt="Photoshop" />
-                                <img src={skillImg18} alt="Fonts" />
-                                <img src={skillImg19} alt="Premiere" />
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
+                </div>
             </Container>
         </section>
     )
