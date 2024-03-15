@@ -1,87 +1,38 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Download } from "react-bootstrap-icons";
 import contactImg from "../assets/img/contact-me.gif";
+import gitPNG from "../assets/img/github.png";
+import linkedPNG from "../assets/img/linkedin.png";
+import emailPNG from "../assets/img/e-contact.png";
 
 export const Contact = () => {
-    
-    const formDefaultDetails = {
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: ""
-    }
-
-    const [formDetails, setFormDetails] = useState(formDefaultDetails);
-    const [buttonText, setButtonText] = useState("Send");
-    const [status, setStatus] = useState({});
-    
-    const onFormUpdate = (category, value) => {
-        setFormDetails({
-            ...formDetails,
-            [category]: value
-        })
-    }
-
-    const submitButton = async (e) => {
-        e.preventDefault();
-        setButtonText("Sending...");
-        let response = await fetch("/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8"
-            },
-            body: JSON.stringify(formDetails)
-        });
-        let result = await response.json();
-        setButtonText("Send");
-        setFormDetails(formDefaultDetails); 
-        if(result.code === 200) {
-            setStatus({ success: true, message: "Message sent successfully!" });
-        } else {
-            setStatus({ success: false, message: "Something went wrong, please try again later" });
-        }
-    }
 
     return (
         <section className="contact" id="connect">
-            <Container fluid>
-                <Row className="align-items-center">
-                    <h2>CONTACT</h2>
-                    <Col>
-                        <img src={contactImg} alt="Contact Me" />
-                    </Col>
-                    <Col md={6}>
-                        <h2>Get In Touch</h2>
-                        <form onSubmit={submitButton}>
-                            <Row>
-                                <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate("firstName", e.target.value)} />
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate("lastName", e.target.value)} />
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate("email", e.target.value)} />
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate("phone", e.target.value)} />
-                                </Col>
-                                <Col>
-                                    <textarea row="6" value={formDetails.message} placeholder="Enter Message" onChange={(e) => onFormUpdate("message", e.target.value)}></textarea>
-                                    <button type="submit"><span>{buttonText}</span></button>
-                                </Col>
-                                {
-                                    status.message &&
-                                    <Col>
-                                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                                    </Col>
-                                }
-                            </Row>
-                        </form>
-                    </Col>
-                </Row>
-            </Container>
+                <Container fluid>
+                    <div class="contact-box">
+                        <Row>
+                            <h2>CONTACT</h2>
+                            <Col xs={12} md={6} xl={5} className="contact-banner">
+                                <img src={contactImg} alt="Contact Me" />
+                            </Col>
+                            <Col xs={12} md={6} xl={7}>
+                                <div class="contact-content">
+                                    <h3>Get In Touch</h3>
+                                    <div className="platforms-box">
+                                        <a href="https://github.com/JoatXI" target="_blank" rel="noopener noreferrer"><img src={gitPNG} alt="Github icon" /></a>
+                                        <a href="https://www.linkedin.com/in/JoatXI/" target="_blank" rel="noopener noreferrer"><img src={linkedPNG} alt="LinkedIn icon" /></a>
+                                        <a href="mailto:<omoohwo.o@gmail.com>" target="_blank" rel="noopener noreferrer"><img src={emailPNG} alt="Email icon" /></a>
+                                    </div>
+                                    <div className="contact-resume">
+                                        <a href="../assets/img/headshot.png" download="SE_Resume">Resume <Download size={30} /></a>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </Container>
         </section>
     )
 }

@@ -3,9 +3,8 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { Download } from "react-bootstrap-icons";
 import logo from "../assets/img/logo.png";
 import linkedinIcon from "../assets/img/linkedin.png";
-import githubIcon from "../assets/img/git.png";
+import githubIcon from "../assets/img/github.png";
 import { HashLink } from "react-router-hash-link";
-import { BrowserRouter as Router} from "react-router-dom";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
@@ -32,7 +31,7 @@ export const NavBar = () => {
         <Navbar className={scrolling ? "scrolling": ""}>
             <Container fluid>
                 <Navbar.Brand href="/">
-                    <img src= {logo} alt="Logo" className="me-auto"/>
+                    <h2>JOATXI</h2>
                 </Navbar.Brand>
                     <Nav className="ms-auto">
                         <Nav.Link as={HashLink} to="#home" className={activeLink === "home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>

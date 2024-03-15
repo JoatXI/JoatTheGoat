@@ -9,9 +9,9 @@ export const Banner = () => {
                 <div class="banner-box">
                     <Row>
                         <Col xs={12} md={6} xl={7} className="banner-text">
-                            <div className="center-content">
-                                <h1>I'm Omoohwo, a Software Engineer & Developer.</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <div className="banner-content">
+                                <h1>My name is ỌMỌOHWÓ, I'm a Software Engineer.</h1>
+                                <p>Lorem ipsum dolor  amet consectetur.</p>
                                 <h2>Here's a story for you</h2>
                             </div>
                         </Col>
