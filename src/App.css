@@ -542,6 +542,36 @@ span.navbar-text {
     max-width: 95%;
 }
 
+/* Ref CSS */
+
+.ref {
+    margin: 0;
+    display: flex;
+}
+
+.ref-box {
+    display: flex;
+    border: 2px solid white;
+}
+
+.ref-scroller {
+    margin: 4rem;
+}
+
+.ref-head {
+    border: 2px solid yellow;
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: 20px;
+}
+
+.ref-text {
+    border: 2px solid yellow;
+    margin: 1rem;
+    padding: 1.2rem;
+    border-radius: 20px;
+}
+
 /* Contact CSS */
 
 .contact-box {
