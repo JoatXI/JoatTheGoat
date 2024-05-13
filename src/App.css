@@ -68,11 +68,18 @@
     --fs-large: clamp(1.2rem, 2vw + 1rem, 2rem);
     --fs-medium: clamp(1rem, 1.25vw, 1.25rem);
     --fs-normal: 1rem;
+
+    --marquee-width: 100vw;
+    /* --marquee-elements: 6; */
+    --marquee-elements-displayed: 48;
+    --marquee-element-width: calc(var(var(--marquee-width)/var(--marquee-elements-displayed)));
 }
 
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -547,29 +554,52 @@ span.navbar-text {
 .ref {
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.ref-box {
+.marquee {
+    width: var(--marquee-width);
+    position: relative;
+}
+
+.marquee-content {
+    list-style: none;
+    height: 100%;
     display: flex;
-    border: 2px solid white;
+    animation: panning 30s linear infinite;
+    margin: 0;
 }
 
-.ref-scroller {
-    margin: 4rem;
+@keyframes panning {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
-.ref-head {
-    border: 2px solid yellow;
-    margin: 1rem;
-    padding: 1.2rem;
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.marquee-content li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 1rem 1rem;
     border-radius: 20px;
+    margin: .5rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    border: 2px solid red;
 }
 
-.ref-text {
-    border: 2px solid yellow;
-    margin: 1rem;
-    padding: 1.2rem;
-    border-radius: 20px;
+.marquee-content :first-child {
+    margin-left: -0.5rem;
 }
 
 /* Contact CSS */
