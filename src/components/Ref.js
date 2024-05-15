@@ -1,5 +1,11 @@
 import { Container } from "react-bootstrap";
 import { useEffect } from "react";
+import { EmojiSunglassesFill, Joystick, Controller, CodeSlash, PlayFill, BrushFill, FiletypeSvg } from "react-bootstrap-icons";
+import pexels from "../assets/img/pexels.png";
+import football from "../assets/img/football.png";
+import flatIcons from "../assets/img/flaticon.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFontAwesome } from "@fortawesome/free-solid-svg-icons";
 
 export const Ref = () => {
 
@@ -28,32 +34,25 @@ export const Ref = () => {
             <Container fluid>
                 <div className="marquee">
                     <ul className="marquee-content">
-                        <li className="ref-head">Attributions: </li>
-                        <li className="ref-text">Icons By Flaticon</li>
-                        <li className="ref-text">Photos By Pexels</li>
-                        <li className="ref-head">Inspiration: </li>
-                        <li className="ref-text">Vishwa</li>
-                        <li className="ref-text">WD-Code YT</li>
+                        <li className="ref-head"><FiletypeSvg size={23} />Icons By</li>
+                        <li className="ref-text1"><img src={flatIcons} />Flaticon</li>
+                        <li className="ref-text2"><FontAwesomeIcon icon={faFontAwesome} />FontAwesome</li>
+                        <li className="ref-text3"><img src={pexels} />Photos By Pexels</li>
                     </ul>
                 </div>
                 <div className="marquee">
                     <ul className="marquee-content n1">
-                        <li className="ref-head">Attributions: </li>
-                        <li className="ref-text">Icons By Flaticon</li>
-                        <li className="ref-text">Photos By Pexels</li>
-                        <li className="ref-head">Inspiration: </li>
-                        <li className="ref-text">Vishwa</li>
-                        <li className="ref-text">WD-Code YT</li>
+                        <li className="ref-head"><BrushFill size={20} />Design Inspired By</li>
+                        <li className="n1-text1"><CodeSlash size={26} />Vishwa Gaurav</li>
+                        <li className="n1-text2"><PlayFill size={26} />WebDecode on YT</li>
                     </ul>
                 </div>
                 <div className="marquee">
                     <ul className="marquee-content n2">
-                        <li className="ref-head">Attributions: </li>
-                        <li className="ref-text">Icons By Flaticon</li>
-                        <li className="ref-text">Photos By Pexels</li>
-                        <li className="ref-head">Inspiration: </li>
-                        <li className="ref-text">Vishwa</li>
-                        <li className="ref-text">WD-Code YT</li>
+                        <li className="ref-head"><EmojiSunglassesFill size={26} />Pleasures</li>
+                        <li className="n2-text1"><Joystick size={26}/>Street Fighter 6</li>
+                        <li className="n2-text2"><Controller size={26} />God Of War</li>
+                        <li className="n2-text3"><img src={football} />Football</li>
                     </ul>
                 </div>
             </Container>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Download } from "react-bootstrap-icons";
 import contactImg from "../assets/img/contact-me.gif";
