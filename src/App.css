@@ -336,6 +336,43 @@ span.navbar-text {
     color: #B8B8B8;
 }
 
+.sub-header ol {
+    list-style: none;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    overflow: hidden;
+    padding: 0;
+}
+
+.sub-header ol li {
+    animation: slide-up 9s infinite;
+    margin-block: 1rem;
+}
+
+.sub-header ol li span {
+    font-size: var(--fs-large);
+    font-family: var(--ff-heading);
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(20deg, cyan, magenta);
+    -webkit-background-clip: text;
+    white-space: nowrap;
+}
+
+@keyframes slide-up {
+    0%, 25% {
+        transform: translateY(0%);
+    }
+    30%, 55% {
+        transform: translateY(-153%);
+    }
+    60%, 85% {
+        transform: translateY(-312%);
+    }
+    90%, 100% {
+        transform: translateY(0%);
+    }
+}
+
 .banner img {
     animation: updown 5s linear infinite;
     width: auto;

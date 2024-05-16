@@ -12,7 +12,13 @@ export const Banner = () => {
                             <div className="banner-content">
                                 <h1>My name is ỌMỌOHWÓ, I'm a Software Engineer.</h1>
                                 <p>Lorem ipsum dolor  amet consectetur.</p>
-                                <h2>Here's a story for you</h2>
+                                <h2 className="sub-header">
+                                    <ol>
+                                        <li><span>Here's a story for you</span></li>
+                                        <li><span>Say OV Hoe!</span></li>
+                                        <li><span>Are you my friend?!</span></li>
+                                    </ol>
+                                </h2>
                             </div>
                         </Col>
                         <Col xs={12} md={6} xl={5}>
