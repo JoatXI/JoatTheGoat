@@ -23,9 +23,6 @@ import skillImg21 from "../assets/img/github.svg";
 import skillImg22 from "../assets/img/express.svg";
 import skillImg23 from "../assets/img/anaconda.svg";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
-
 import skillPhoto from "../assets/img/tech-stack.gif";
 
 export const Skills = () => {

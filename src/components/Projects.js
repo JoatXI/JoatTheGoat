@@ -15,9 +15,9 @@ export const Projects = () => {
                         <Col>
                             <div class="card one">
                                 <div class="card-content">
-                                    <h3 className="card-title">Bank App</h3>
-                                    <p className="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem facilis.</p>
-                                    <a href="#" className="card-butn">Demo <BoxArrowUpRight size={15} /></a>
+                                    <h3 className="card-title">Todo App</h3>
+                                    <p className="card-body">An android application that enables users to write down a list of task to complete.</p>
+                                    <a href="https://github.com/JoatXI/Todo-App" target="_blank" rel="noopener noreferrer" className="card-butn">Source <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>
                         </Col>
@@ -25,17 +25,17 @@ export const Projects = () => {
                             <div class="card two">
                                 <div class="card-content">
                                     <h3 className="card-title">Space Invader</h3>
-                                    <p className="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem facilis.</p>
-                                    <a href="#" className="card-butn">Demo <BoxArrowUpRight size={15} /></a>
+                                    <p className="card-body">A python game where players controls a spaceship to shoot down invading alien ships.</p>
+                                    <a href="https://github.com/JoatXI/SpaceRaiderClone" target="_blank" rel="noopener noreferrer" className="card-butn">Source <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>
                         </Col>
                         <Col>
                             <div className="card three">
                                 <div class="card-content">
-                                    <h3 className="card-title">AI Robot</h3>
-                                    <p className="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat rem facilis.</p>
-                                    <a href="#" className="card-butn">Demo <BoxArrowUpRight size={15} /></a>
+                                    <h3 className="card-title">Rental Site</h3>
+                                    <p className="card-body">A web app which allows users to book places to stay while away, such as hotels.</p>
+                                    <a href="https://github.com/JoatXI/PTS-WebApp" target="_blank" rel="noopener noreferrer" className="card-butn">Source <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>
                         </Col>
