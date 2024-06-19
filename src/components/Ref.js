@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useEffect } from "react";
-import { EmojiSunglassesFill, Joystick, CameraReels, CodeSlash, PlayFill, BrushFill, FiletypeSvg } from "react-bootstrap-icons";
+import { EmojiSunglassesFill, Joystick, CameraReels, Braces, PlayFill, BrushFill, FiletypeSvg } from "react-bootstrap-icons";
 import pexels from "../assets/img/pexels.png";
 import football from "../assets/img/football.png";
 import flatIcons from "../assets/img/flaticon.svg";
@@ -43,7 +43,7 @@ export const Ref = () => {
                 <div className="marquee">
                     <ul className="marquee-content n1">
                         <li className="ref-head"><BrushFill size={20} />Design Inspired By</li>
-                        <li className="n1-text1"><CodeSlash size={26} />Vishwa Gaurav</li>
+                        <li className="n1-text1"><Braces size={26} />Vishwa Gaurav</li>
                         <li className="n1-text2"><PlayFill size={26} />WebDecode on YT</li>
                     </ul>
                 </div>

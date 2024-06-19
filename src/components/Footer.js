@@ -1,7 +1,9 @@
+import { FiletypeJsx } from "react-bootstrap-icons";
+
 export const Footer = () => {
     return (
-        <footer className="footer">
-            <p>Attributions  |  All Rights Reserved</p>
-        </footer>
+        <div className="footer-box">
+            <p><FiletypeJsx size={22} />Created & Coded by Ọmọohwó</p>
+        </div>
     )
 }

@@ -8,7 +8,7 @@ export const Projects = () => {
             <Container fluid>
                 <div className="project-header">
                     <h2>PROJECTS</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore deserunt corrupti ab quam eaque deleniti quaerat officia.</p>
+                    <p>A preview of a few personal projects I have worked on in recent years; I'm currently working on live demonstration feature.</p>
                 </div>
                 <div class="project-cards">
                     <Row>

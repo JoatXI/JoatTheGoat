@@ -56,8 +56,8 @@
     --clr-primary-100: #FFFFFF;
     --clr-primary-200: #F3EBEB;
     
-    --clr-neutral-400: #F4E4E4;
-    --clr-neutral-600: #BFDBFE;
+    --clr-neutral-400: #f7c3c3;
+    --clr-neutral-600: #8bbdfa;
     --clr-neutral-900: #151516;
 
     --ff-logo: "Goldman-Regular";
@@ -106,7 +106,7 @@ h2 {
     padding: 0;
     margin: 0;
     font-family: var(--ff-heading);
-    font-size: var(--fs-large) !important;
+    font-size: var(--fs-headers) !important;
 }
 
 p, a, li, button, ul {
@@ -741,6 +741,7 @@ span.navbar-text {
 
 .contact-content h3 {
     font-style: italic;
+    font-size: var(--fs-large);
 }
 
 .platforms-box {
@@ -793,6 +794,21 @@ span.navbar-text {
 .contact-resume a:hover,
 .contact-resume a:focus {
     background-color: var(--clr-primary-200);
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: .5rem;
+}
+
+.footer-box :hover {
+    cursor: default;
+}
+
+.footer-box svg {
+    margin-right: .5rem;
 }
 
 @media (hover) {
