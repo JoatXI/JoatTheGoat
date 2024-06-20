@@ -46,7 +46,7 @@ export const NavBar = () => {
                             <button className="vvd"><span>Connect</span></button>
                         </HashLink>
                         <div className="resume-button">
-                            <a href="../assets/img/headshot.png" download="SE_Resume">Resume<Download size={20} /></a>
+                            <a href="../assets/img/Omoohwo_Resume.pdf" download="Omoohwo_Resume">Resume<Download size={20} /></a>
                         </div>
                     </span>
             </Container>

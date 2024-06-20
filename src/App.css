@@ -484,7 +484,7 @@ span.navbar-text {
 
 .card {
     color: var(--clr-primary-200) !important;
-    background-image: url(./assets/img/app-project.jpg);
+    background-image: url(./assets/img/TodoApp.png);
     background-size: cover;
     padding: 10rem 0 0;
     width: 35ch;
@@ -497,13 +497,13 @@ span.navbar-text {
 }
 
 .two {
-    background-image: url(./assets/img/game-project.jpg);
-    background-size: cover;
+    background-image: url(./assets/img/spaceraider.png);
+    background-size: contain;
 }
 
 .three {
-    background-image: url(./assets/img/ai-project.jpg);
-    background-size: cover;
+    background-image: url(./assets/img/rentalsite.png);
+    background-size: contain;
 }
 
 .card:hover,
