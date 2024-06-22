@@ -8,6 +8,7 @@ import { HashLink } from "react-router-hash-link";
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolling, setScrolling] = useState(false);
+    const fileUrl = "http://localhost:3000/Omoohwo_Resume.pdf";
     
     useEffect(() => {
         const onScroll = () => {
@@ -24,6 +25,19 @@ export const NavBar = () => {
 
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
+    }
+
+    const fileDownload = (url) => {
+        fetch(url).then(response => response.blob()).then(blob=> {
+            const blobUrl = window.URL.createObjectURL(new Blob([blob]));
+            const fileName = url.split("/").pop();
+            const download = document.createElement('a');
+            download.href = blobUrl;
+            download.setAttribute('download', fileName);
+            document.body.appendChild(download);
+            download.click();
+            download.remove();
+        })
     }
 
     return (
@@ -46,7 +60,7 @@ export const NavBar = () => {
                             <button className="vvd"><span>Connect</span></button>
                         </HashLink>
                         <div className="resume-button">
-                            <a href="../assets/img/Omoohwo_Resume.pdf" download="Omoohwo_Resume">Resume<Download size={20} /></a>
+                            <a href="/#" onClick={()=>{fileDownload(fileUrl)}}>Resume<Download size={20} /></a>
                         </div>
                     </span>
             </Container>

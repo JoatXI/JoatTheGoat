@@ -6,6 +6,20 @@ import linkedPNG from "../assets/img/linkedin.png";
 import emailPNG from "../assets/img/e-contact.png";
 
 export const Contact = () => {
+    const fileUrl = "http://localhost:3000/Omoohwo_Resume.pdf";
+    
+    const fileDownload = (url) => {
+        fetch(url).then(response => response.blob()).then(blob=> {
+            const blobUrl = window.URL.createObjectURL(new Blob([blob]));
+            const fileName = url.split("/").pop();
+            const download = document.createElement('a');
+            download.href = blobUrl;
+            download.setAttribute('download', fileName);
+            document.body.appendChild(download);
+            download.click();
+            download.remove();
+        })
+    }
 
     return (
         <section className="contact" id="connect">
@@ -13,19 +27,19 @@ export const Contact = () => {
                     <div class="contact-box">
                         <Row>
                             <h2>CONTACT</h2>
-                            <Col xs={12} md={6} xl={5} className="contact-banner">
+                            <Col xs={12} md={5} xl={5} className="contact-banner">
                                 <img src={contactImg} alt="Contact Me" />
                             </Col>
-                            <Col xs={12} md={6} xl={7}>
+                            <Col xs={12} md={7} xl={7}>
                                 <div class="contact-content">
                                     <h3>Get In Touch</h3>
                                     <div className="platforms-box">
                                         <a href="https://github.com/JoatXI" target="_blank" rel="noopener noreferrer"><img src={gitPNG} alt="Github icon" /></a>
                                         <a href="https://www.linkedin.com/in/JoatXI/" target="_blank" rel="noopener noreferrer"><img src={linkedPNG} alt="LinkedIn icon" /></a>
-                                        <a href="mailto:<omoohwo.o@gmail.com>" target="_blank" rel="noopener noreferrer"><img src={emailPNG} alt="Email icon" /></a>
+                                        <a href="mailto:omoohwo.o@gmail.com" target="_blank" rel="noopener noreferrer"><img src={emailPNG} alt="Email icon" /></a>
                                     </div>
                                     <div className="contact-resume">
-                                        <a href="../assets/img/headshot.png" download="SE_Resume">Resume <Download size={30} /></a>
+                                        <a href="resume:;" onClick={()=>{fileDownload(fileUrl)}}>Resume <Download size={30} /></a>
                                     </div>
                                 </div>
                             </Col>

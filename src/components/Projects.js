@@ -16,7 +16,7 @@ export const Projects = () => {
                             <div class="card one">
                                 <div class="card-content">
                                     <h3 className="card-title">Todo App</h3>
-                                    <p className="card-body">An android application that enables users to write down a list of task to complete.</p>
+                                    <p className="card-body">An android application that enables users to write down a list of tasks to complete.</p>
                                     <a href="https://github.com/JoatXI/Todo-App" target="_blank" rel="noopener noreferrer" className="card-butn">Source <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>

@@ -314,7 +314,7 @@ span.navbar-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 2.5rem;
+    padding-block: 1.5rem;
     margin-inline: auto;
     width: 95%;
 }
@@ -798,9 +798,15 @@ span.navbar-text {
 
 .footer-box {
     display: flex;
+    color: #c5c5c5;
     justify-content: center;
     align-items: center;
     padding-block: .5rem;
+}
+
+.footer-box p {
+    margin: 0;
+    font-size: var(--fs-normal);
 }
 
 .footer-box :hover {
