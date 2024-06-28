@@ -6,7 +6,7 @@ import linkedPNG from "../assets/img/linkedin.png";
 import emailPNG from "../assets/img/e-contact.png";
 
 export const Contact = () => {
-    const fileUrl = "http://localhost:3000/Omoohwo_Resume.pdf";
+    const fileUrl = "https://JoatXI.github.io/JoatTheGoat/Omoohwo_Resume.pdf";
     
     const fileDownload = (url) => {
         fetch(url).then(response => response.blob()).then(blob=> {
