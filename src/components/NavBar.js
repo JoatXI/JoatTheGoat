@@ -60,7 +60,7 @@ export const NavBar = () => {
                             <button className="vvd"><span>Connect</span></button>
                         </HashLink>
                         <div className="resume-button">
-                            <a href="/#" onClick={()=>{fileDownload(fileUrl)}}>Resume<Download size={20} /></a>
+                            <a href="#home" onClick={()=>{fileDownload(fileUrl)}}>Resume<Download size={20} /></a>
                         </div>
                     </span>
             </Container>
