@@ -408,7 +408,7 @@ span.navbar-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 2.5rem;
+    padding-block: 3.5rem;
     margin-inline: auto;
     width: 95%;
 }
@@ -715,13 +715,13 @@ span.navbar-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-block: 2.5rem;
-    width: 95%;
+    padding-block: 3.5rem;
     margin-inline: auto;
-    text-align: center;
+    width: 95%;
 }
 
 .contact-box h2 {
+    text-align: center;
     padding-bottom: 2rem;
 }
 
@@ -731,17 +731,25 @@ span.navbar-text {
     justify-content: center;
 }
 
+.contact-banner img {
+    margin-left: 10rem;
+    width: auto;
+    max-width: 90%;
+}
+
 .contact-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     min-height: 100%;
     gap: 2rem;
+    text-align: center;
 }
 
 .contact-content h3 {
     font-style: italic;
     font-size: var(--fs-large);
+    padding-top: 1rem;
 }
 
 .platforms-box {
@@ -751,8 +759,8 @@ span.navbar-text {
 }
 
 .platforms-box a {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     background: var(--clr-neutral-400);
     display: inline-flex;
     align-items: center;
@@ -770,7 +778,7 @@ span.navbar-text {
 }
 
 .platforms-box a img {
-    width: 60%;
+    width: 65%;
 }
 
 .contact-resume {
@@ -795,6 +803,8 @@ span.navbar-text {
 .contact-resume a:focus {
     background-color: var(--clr-primary-200);
 }
+
+/* Footer CSS */
 
 .footer-box {
     display: flex;
@@ -889,6 +899,12 @@ span.navbar-text {
         90%, 100% {
             transform: translateY(-20%);
         }
+    }
+}
+
+@media screen and (width <= 800px) {
+    .contact-banner img {
+    margin-left: 0;
     }
 }
 

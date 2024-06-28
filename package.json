@@ -2,8 +2,9 @@
   "name": "joat-portfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost3003",
+  "proxy": "https://localhost3003/",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",

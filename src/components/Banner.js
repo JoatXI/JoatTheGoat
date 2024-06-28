@@ -6,7 +6,7 @@ export const Banner = () => {
     return (
         <section className="banner" id="home">
             <Container fluid>
-                <div class="banner-box">
+                <div className="banner-box">
                     <Row>
                         <Col xs={12} md={6} xl={7} className="banner-text">
                             <div className="banner-content">

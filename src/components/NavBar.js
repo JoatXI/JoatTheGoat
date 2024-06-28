@@ -53,8 +53,8 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/JoatXI/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="LinkedIn icon" /></a>
-                            <a href="https://github.com/JoatXI" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github icon" /></a>
+                            <a href="https://www.linkedin.com/in/JoatXI/" target="_blank" rel="noopener noreferrer"><img src={linkedinIcon} alt="LinkedIn Img" /></a>
+                            <a href="https://github.com/JoatXI" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="Github Img" /></a>
                         </div>
                         <HashLink to="#connect">
                             <button className="vvd"><span>Connect</span></button>
