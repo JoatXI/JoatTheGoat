@@ -239,7 +239,9 @@ span.navbar-text {
     display: flex;
 }
 
-.resume-button a {
+.resume-button button {
+    font-family: var(--ff-body);
+    font-size: var(--fs-medium);
     display: inline-flex;
     border-radius: 1.875rem;
     margin-right: 0.375rem;
@@ -252,7 +254,7 @@ span.navbar-text {
     text-decoration: none;
 }
 
-.resume-button a:hover {
+.resume-button button:hover {
     background-color: var(--clr-primary-200);
 }
 
@@ -266,7 +268,7 @@ span.navbar-text {
     margin-left: 1.25rem;
 }
 
-.navbar-text button {
+.navbar-text .vvd {
     font-weight: 700;
     color: var(--clr-primary-100);
     transition: 0.3s ease-in-out;
@@ -276,11 +278,11 @@ span.navbar-text {
     padding: 0.625rem 0.938rem;
 }
 
-.navbar-text button span {
+.navbar-text .vvd span {
     z-index: 1;
 }
 
-.navbar-text button::before {
+.navbar-text .vvd::before {
     content: "";
     width: 0%;
     height: 100%;
@@ -292,11 +294,11 @@ span.navbar-text {
     transition: 0.3s ease-in-out;
 }
 
-.navbar-text button:hover {
+.navbar-text .vvd:hover {
     color: var(--clr-neutral-900);
 }
 
-.navbar-text button:hover::before {
+.navbar-text .vvd:hover::before {
     width: 100%;
     position: absolute;
     height: 100%;
@@ -787,9 +789,10 @@ span.navbar-text {
     justify-content: center;
 }
 
-.contact-resume a {
+.contact-resume button {
     color: #000;
     font-size: 1.5rem;
+    font-family: var(--ff-body);
     font-weight: 700;
     border-radius: 50px;
     padding: .8rem 2rem;
@@ -799,8 +802,8 @@ span.navbar-text {
     text-decoration: none;
 }
 
-.contact-resume a:hover,
-.contact-resume a:focus {
+.contact-resume button:hover,
+.contact-resume button:focus {
     background-color: var(--clr-primary-200);
 }
 

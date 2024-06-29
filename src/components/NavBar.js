@@ -43,7 +43,7 @@ export const NavBar = () => {
     return (
         <Navbar className={scrolling ? "scrolling": ""}>
             <Container fluid>
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="#home">
                     <h2>JOATXI</h2>
                 </Navbar.Brand>
                     <Nav className="ms-auto">
@@ -60,7 +60,7 @@ export const NavBar = () => {
                             <button className="vvd"><span>Connect</span></button>
                         </HashLink>
                         <div className="resume-button">
-                            <a href="#home" onClick={()=>{fileDownload(fileUrl)}}>Resume<Download size={20} /></a>
+                            <button onClick={()=>{fileDownload(fileUrl)}}>Resume<Download size={20} /></button>
                         </div>
                     </span>
             </Container>

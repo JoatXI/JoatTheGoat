@@ -39,7 +39,7 @@ export const Contact = () => {
                                         <a href="mailto:omoohwo.o@gmail.com" target="_blank" rel="noopener noreferrer"><img src={emailPNG} alt="Email Img" /></a>
                                     </div>
                                     <div className="contact-resume">
-                                        <a href="#connect" onClick={()=>{fileDownload(fileUrl)}}>Resume <Download size={30} /></a>
+                                        <button onClick={()=>{fileDownload(fileUrl)}}>Resume <Download size={30} /></button>
                                     </div>
                                 </div>
                             </Col>
