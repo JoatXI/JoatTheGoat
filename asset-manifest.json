@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/JoatTheGoat/static/css/main.5cc07ac5.css",
-    "main.js": "/JoatTheGoat/static/js/main.0c8cbfd8.js",
+    "main.css": "/JoatTheGoat/static/css/main.9f3bb52e.css",
+    "main.js": "/JoatTheGoat/static/js/main.0ed3f0f6.js",
     "static/js/453.81b21817.chunk.js": "/JoatTheGoat/static/js/453.81b21817.chunk.js",
     "static/media/headshot.png": "/JoatTheGoat/static/media/headshot.5cf5778004f76f9073bf.png",
     "static/media/rentalsite.png": "/JoatTheGoat/static/media/rentalsite.36389ffd9a9888a61e37.png",
@@ -42,12 +42,12 @@
     "static/media/kotlin.svg": "/JoatTheGoat/static/media/kotlin.3f510ba36347b24833dabbae389f0078.svg",
     "index.html": "/JoatTheGoat/index.html",
     "static/media/flaticon.svg": "/JoatTheGoat/static/media/flaticon.dedec92546468ded23252a7c84a36bc4.svg",
-    "main.5cc07ac5.css.map": "/JoatTheGoat/static/css/main.5cc07ac5.css.map",
-    "main.0c8cbfd8.js.map": "/JoatTheGoat/static/js/main.0c8cbfd8.js.map",
+    "main.9f3bb52e.css.map": "/JoatTheGoat/static/css/main.9f3bb52e.css.map",
+    "main.0ed3f0f6.js.map": "/JoatTheGoat/static/js/main.0ed3f0f6.js.map",
     "453.81b21817.chunk.js.map": "/JoatTheGoat/static/js/453.81b21817.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cc07ac5.css",
-    "static/js/main.0c8cbfd8.js"
+    "static/css/main.9f3bb52e.css",
+    "static/js/main.0ed3f0f6.js"
   ]
 }
