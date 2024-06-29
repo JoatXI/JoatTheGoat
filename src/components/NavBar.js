@@ -8,7 +8,7 @@ import { HashLink } from "react-router-hash-link";
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolling, setScrolling] = useState(false);
-    const fileUrl = "https://JoatXI.github.io/JoatTheGoat/Omoohwo_Resume.pdf";
+    const fileUrl = "https://JoatXI.com/Omoohwo_Resume.pdf";
     
     useEffect(() => {
         const onScroll = () => {
@@ -43,7 +43,7 @@ export const NavBar = () => {
     return (
         <Navbar className={scrolling ? "scrolling": ""}>
             <Container fluid>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="https://JoatXI.com">
                     <h2>JOATXI</h2>
                 </Navbar.Brand>
                     <Nav className="ms-auto">
