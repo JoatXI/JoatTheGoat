@@ -43,7 +43,7 @@ export const NavBar = () => {
     return (
         <Navbar className={scrolling ? "scrolling": ""}>
             <Container fluid>
-                <Navbar.Brand href="https://JoatXI.com">
+                <Navbar.Brand href="https://www.JoatXI.com">
                     <h2>JOATXI</h2>
                 </Navbar.Brand>
                     <Nav className="ms-auto">
