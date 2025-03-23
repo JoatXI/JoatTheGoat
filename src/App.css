@@ -489,7 +489,7 @@ span.navbar-text {
     background-image: url(./assets/img/TodoApp.png);
     background-size: cover;
     padding: 10rem 0 0;
-    width: 35ch;
+    width: 45ch;
     border-radius: 0.5rem !important;
     overflow: hidden;
     transition: transform 300ms ease-in-out;
@@ -500,23 +500,16 @@ span.navbar-text {
 
 .two {
     background-image: url(./assets/img/spaceraider.png);
-    background-size: contain;
 }
 
 .three {
     background-image: url(./assets/img/rentalsite.png);
-    background-size: contain;
 }
 
 .card:hover,
 .card:focus-within {
     transform: scale(1.02);
     border: 2px solid #808080 !important;
-}
-
-.card p {
-    padding: 0;
-    font-size: 1rem;
 }
 
 .card-content {
@@ -552,7 +545,12 @@ span.navbar-text {
     transform: scaleX(1);
 }
 
+.card p {
+    padding: 1rem 0;
+}
+
 .card-body {
+    font-size: 1rem;
     color: rgb(255 255 255 / 0.85);
 }
 

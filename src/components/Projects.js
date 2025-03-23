@@ -16,7 +16,7 @@ export const Projects = () => {
                             <div className="card one">
                                 <div className="card-content">
                                     <h3 className="card-title">Todo App</h3>
-                                    <p className="card-body">An android application that enables users to write down a list of tasks to complete.</p>
+                                    <p className="card-body">A React android application that enables users to write down a list of tasks to complete.</p>
                                     <a href="https://github.com/JoatXI/Todo-App" target="_blank" rel="noopener noreferrer" className="card-butn">Source <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@ export const Projects = () => {
                             <div className="card three">
                                 <div className="card-content">
                                     <h3 className="card-title">Rental Place</h3>
-                                    <p className="card-body">A web app which allows users to book places to stay while away, such as hotels.</p>
+                                    <p className="card-body">A web app which allows users to book places to stay while on holiday, such as hotels.</p>
                                     <a href="https://github.com/JoatXI/PTS-WebApp" target="_blank" rel="noopener noreferrer" className="card-butn">Source <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>
