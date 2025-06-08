@@ -6,7 +6,7 @@ import linkedPNG from "../assets/img/linkedin.png";
 import emailPNG from "../assets/img/e-contact.png";
 
 export const Contact = () => {
-    const fileUrl = "https://www.JoatXI.com/Omoohwo_Resume.pdf";
+    const fileUrl = "https://www.JoatXI.com/Eng_Resume.pdf";
     
     const fileDownload = (url) => {
         fetch(url).then(response => response.blob()).then(blob=> {
@@ -36,7 +36,7 @@ export const Contact = () => {
                                     <div className="platforms-box">
                                         <a href="https://github.com/JoatXI" target="_blank" rel="noopener noreferrer"><img src={gitPNG} alt="Github Img" /></a>
                                         <a href="https://www.linkedin.com/in/JoatXI/" target="_blank" rel="noopener noreferrer"><img src={linkedPNG} alt="LinkedIn Img" /></a>
-                                        <a href="mailto:omoohwo.o@gmail.com" target="_blank" rel="noopener noreferrer"><img src={emailPNG} alt="Email Img" /></a>
+                                        <a href="mailto:joatxibusiness@gmail.com" target="_blank" rel="noopener noreferrer"><img src={emailPNG} alt="Email Img" /></a>
                                     </div>
                                     <div className="contact-resume">
                                         <button onClick={()=>{fileDownload(fileUrl)}}>Resume <Download size={30} /></button>

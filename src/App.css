@@ -486,8 +486,8 @@ span.navbar-text {
 
 .card {
     color: var(--clr-primary-200) !important;
-    background-image: url(./assets/img/TodoApp.png);
-    background-size: cover;
+    background-image: url(./assets/img/recipe.png);
+    background-size: contain;
     padding: 10rem 0 0;
     width: 45ch;
     border-radius: 0.5rem !important;
@@ -499,11 +499,11 @@ span.navbar-text {
 }
 
 .two {
-    background-image: url(./assets/img/spaceraider.png);
+    background-image: url(./assets/img/recorder.png);
 }
 
 .three {
-    background-image: url(./assets/img/rentalsite.png);
+    background-image: url(./assets/img/email-prototype.png);
 }
 
 .card:hover,

@@ -6,22 +6,22 @@ import skillImg4 from "../assets/img/nodejs.svg";
 import skillImg5 from "../assets/img/python.svg";
 import skillImg6 from "../assets/img/javascript.svg";
 import skillImg7 from "../assets/img/react.svg";
-import skillImg8 from "../assets/img/mysql.svg";
+import skillImg8 from "../assets/img/mongodb.svg";
 import skillImg9 from "../assets/img/sqlite.svg";
-import skillImg10 from "../assets/img/babel.svg";
+import skillImg10 from "../assets/img/ffmpeg.svg";
 import skillImg11 from "../assets/img/kotlin.svg";
 import skillImg12 from "../assets/img/bootstrap.svg";
 import skillImg13 from "../assets/img/npm.svg";
-import skillImg14 from "../assets/img/apache.svg";
+import skillImg14 from "../assets/img/azure.svg";
 import skillImg15 from "../assets/img/githubpages.svg";
 import skillImg16 from "../assets/img/render.svg";
 import skillImg17 from "../assets/img/photoshop.svg";
 import skillImg18 from "../assets/img/illustrator.svg";
-import skillImg19 from "../assets/img/premiere.svg";
 import skillImg20 from "../assets/img/git.svg";
 import skillImg21 from "../assets/img/github.svg";
 import skillImg22 from "../assets/img/express.svg";
 import skillImg23 from "../assets/img/anaconda.svg";
+import skillImg24 from "../assets/img/figma.svg";
 
 import skillPhoto from "../assets/img/repertoire.png";
 
@@ -45,9 +45,9 @@ export const Skills = () => {
                                 </div>
                                 <div className="row">
                                     <p>Databases, Servers & Web Hosting:</p>
-                                    <img src={skillImg8} alt="MySQL Img" />
+                                    <img src={skillImg8} alt="MongoDB Img" />
                                     <img src={skillImg9} alt="SQLite Img" />
-                                    <img src={skillImg14} alt="Apache Img" />
+                                    <img src={skillImg14} alt="Azure Img" />
                                     <img src={skillImg15} alt="Pages Img" />
                                     <img src={skillImg16} alt="Render Img" />
                                 </div>
@@ -66,15 +66,15 @@ export const Skills = () => {
                                     <img src={skillImg22} alt="ExpressJs Img" />
                                     <img src={skillImg13} alt="NPM Img" />
                                     <img src={skillImg7} alt="React Img" />
-                                    <img src={skillImg10} alt="Babel Img" />
+                                    <img src={skillImg10} alt="FFmpeg Img" />
                                     <img src={skillImg12} alt="Bootstrap Img" />
                                     <img src={skillImg23} alt="Anaconda Img" />
                                 </div>
                                 <div className="row">
                                     <p>Design Tools:</p>
-                                    <img src={skillImg17} alt="Photoshop Img" />
                                     <img src={skillImg18} alt="Illustration Img" />
-                                    <img src={skillImg19} alt="Premiere Img" />
+                                    <img src={skillImg24} alt="Figma Img" />
+                                    <img src={skillImg17} alt="Photoshop Img" />
                                 </div>
                             </div>
                         </Col>
