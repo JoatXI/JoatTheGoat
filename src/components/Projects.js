@@ -17,7 +17,7 @@ export const Projects = () => {
                                 <div className="card-content">
                                     <h3 className="card-title">Recipe Sharer</h3>
                                     <p className="card-body">A recipe-sharing Web Application that allows users to share and explore various recipes.</p>
-                                    <a href="https://recipe-demo-cvgefqcshhbmf4dy.ukwest-01.azurewebsites.net" target="_blank" rel="noopener noreferrer" className="card-butn">Demo <BoxArrowUpRight size={15} /></a>
+                                    <a href="https://recipe-app-taupe-five-11.vercel.app" target="_blank" rel="noopener noreferrer" className="card-butn">Demo <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>
                         </Col>
@@ -35,7 +35,7 @@ export const Projects = () => {
                                 <div className="card-content">
                                     <h3 className="card-title">Email Security</h3>
                                     <p className="card-body">A Microsoft Outlook Add-In for sending secured emails with real-time sensitive data detection & Encryption options.</p>
-                                    <a href="https://email-prototype.azurewebsites.net" target="_blank" rel="noopener noreferrer" className="card-butn">Demo <BoxArrowUpRight size={15} /></a>
+                                    <a href="https://email-security-gamma.vercel.app" target="_blank" rel="noopener noreferrer" className="card-butn">Demo <BoxArrowUpRight size={15} /></a>
                                 </div>
                             </div>
                         </Col>
