@@ -44,7 +44,7 @@ export const NavBar = () => {
         <Navbar className={scrolling ? "scrolling": ""}>
             <Container fluid>
                 <Navbar.Brand href="https://www.JoatXI.com">
-                    <h2>JOATXI</h2>
+                    <h2>ỌMỌ</h2>
                 </Navbar.Brand>
                     <Nav className="ms-auto">
                         <Nav.Link as={HashLink} to="#home" className={activeLink === "home" ? "active navbar-link" : "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
