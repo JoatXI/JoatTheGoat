@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.47a98ec3.css",
-    "main.js": "/static/js/main.7bbf7e18.js",
+    "main.css": "/static/css/main.65eb6502.css",
+    "main.js": "/static/js/main.208b0afb.js",
     "static/js/453.81b21817.chunk.js": "/static/js/453.81b21817.chunk.js",
-    "static/media/headshot.png": "/static/media/headshot.1265658a56150bb8a122.png",
+    "static/media/repertoire.svg": "/static/media/repertoire.812a96c10ba9bace4c59a6a0eb1e3472.svg",
     "static/media/recipe.png": "/static/media/recipe.0defbb8fc1d207db69f9.png",
+    "static/media/connect.svg": "/static/media/connect.794c2ec78a7bb781a6e15b10431c2ac6.svg",
+    "static/media/headshot.svg": "/static/media/headshot.3ab94fe55f021ea91779fed493e88859.svg",
     "static/media/Montserrat-ExtraBold.ttf": "/static/media/Montserrat-ExtraBold.6c8b198832c88c649faa.ttf",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
     "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
-    "static/media/repertoire.png": "/static/media/repertoire.681fee2cf463d3a2304d.png",
-    "static/media/connect.png": "/static/media/connect.d531b63a00b5830321c1.png",
     "static/media/recorder.png": "/static/media/recorder.422ae18359d1970f8604.png",
     "static/media/Goldman-Regular.ttf": "/static/media/Goldman-Regular.93b3965cf4c8f6ce3e4b.ttf",
     "static/media/football.png": "/static/media/football.ee5ff7ac9841fc249673.png",
@@ -42,12 +42,12 @@
     "index.html": "/index.html",
     "static/media/azure.svg": "/static/media/azure.ac9b5b2cb0cd06fff7ba91af59b55145.svg",
     "static/media/flaticon.svg": "/static/media/flaticon.0bce1d31bba45e126d43a8a055b89f64.svg",
-    "main.47a98ec3.css.map": "/static/css/main.47a98ec3.css.map",
-    "main.7bbf7e18.js.map": "/static/js/main.7bbf7e18.js.map",
+    "main.65eb6502.css.map": "/static/css/main.65eb6502.css.map",
+    "main.208b0afb.js.map": "/static/js/main.208b0afb.js.map",
     "453.81b21817.chunk.js.map": "/static/js/453.81b21817.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47a98ec3.css",
-    "static/js/main.7bbf7e18.js"
+    "static/css/main.65eb6502.css",
+    "static/js/main.208b0afb.js"
   ]
 }
